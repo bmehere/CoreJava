@@ -1,0 +1,20 @@
+class Return1 
+{
+	public static void main(String[] args) 
+	{
+           System.out.println(count(2344));
+		   int ans = count(456345);
+		   System.out.println(ans);
+	}
+	
+	public static int count(int num)
+	{
+		int ct = 0;
+		while(num>0)
+		{
+			ct++;
+			num/=10;
+		}
+		return ct;
+	}
+}

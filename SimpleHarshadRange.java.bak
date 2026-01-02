@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class SimpleHarshadRange {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter start of range: ");
+        int start = sc.nextInt();
+
+        System.out.print("Enter end of range: ");
+        int end = sc.nextInt();
+
+        //System.out.println("Harshad numbers in range:");
+
+        for (int temp = start; temp <= end; temp++) {
+            int sum = 0, num = temp;
+
+            while (num > 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+
+            if (temp % sum == 0) {
+                System.out.print(temp + " ");
+            }
+        }
+    }
+}

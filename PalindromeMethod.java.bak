@@ -1,0 +1,37 @@
+class PalindromeMethod
+{
+	public static void main(String[] args) 
+	{
+       Scanner sc = new Scanner(System.in);
+	   System.out.println("Enter the no");
+	   int ip = sc.nextInt();
+	   
+	   if(isPalindrome(ip))
+		{
+		   System.out.println("It is palindrome");
+		}
+		else
+		{
+			System.out.println("It is not palndrome");
+		}
+ }
+	   
+	
+	public static boolean isPalindrome(int num)
+	{
+		return num == reverse(num);
+	}
+	
+	public static int reverse(int num)
+	{
+		int rev =0;
+		
+		while(num!=0)
+		{
+			rev = rev*10 + (num%10);
+			num/=10;
+		}
+		return rev;
+	}
+	
+}

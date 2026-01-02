@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class SunnyNumRange {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter start of range: ");
+        int start = sc.nextInt();
+
+        System.out.print("Enter end of range: ");
+        int end = sc.nextInt();
+
+        //System.out.println("Sunny Numbers between " + start + " and " + end + " are:");
+
+        for (int number = start; number <= end; number++) {
+            int nextNumber = number + 1;
+            int sqrt = (int) Math.sqrt(nextNumber);
+
+            if (sqrt * sqrt == nextNumber) {
+                System.out.println(number);
+            }
+        }
+
+        sc.close();
+    }
+}
