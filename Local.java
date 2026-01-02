@@ -1,0 +1,12 @@
+class Local
+{
+	public static void main(String[] args) 
+	{
+		{
+		int a = 10;
+		System.out.println(a);
+		double b = 123.123;
+		System.out.println(b);
+	     }
+}
+}

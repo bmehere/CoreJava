@@ -1,0 +1,25 @@
+class M2 
+{
+	public static void main(String[] args) 
+	{
+      raju();
+	  raju();
+	  bheem();
+	  chutki();
+	}
+	
+	public static void raju()
+	{
+		System.out.println("Hi! Chutki");
+	}
+	
+	public static void bheem()
+	{
+		System.out.println("I'm there raju");
+	}
+	
+	public static void chutki()
+	{
+		System.out.println("Get lost");
+	}
+}

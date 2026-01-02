@@ -1,0 +1,40 @@
+class HappyNumRange 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+	
+	public static void rangeOfHappy(int start,int end)
+	{
+		while(start<=end)
+		{
+			if(isHappy(start))
+			{
+				System.out.println(start);
+			}
+			start++;
+		}
+	}
+	
+	public static boolean isHappy(int num)
+	{
+		int ans = num;
+		while(ans!=1 && ans!=4)
+		{
+			ans = sumOfSqDigit(ans);
+		}
+		return ans == 1;
+	}
+	
+	public static int sumOfSqDigit(int num)
+	{
+		int sum = 0;
+		while(num!=0)
+		{
+			sum+=(num%10)*(num%10);
+			num/=10;
+		}
+		return sum;
+	}
+}

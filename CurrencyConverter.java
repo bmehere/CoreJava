@@ -1,0 +1,27 @@
+class CurrencyConverter 
+{
+	public static void main(String[] args) 
+	{
+      rupeeToDollar(100);
+	}
+	
+	public static void rupeeToDollar(double rup)
+	{
+		double dollar = rup/87.80;
+		System.out.println(dollar);
+		dollarToEuro(dollar);
+	}
+	
+	public static void dollarToEuro(double dollar)
+	{
+		double euro = dollar/1.18;
+		System.out.println(euro);
+		euroToDirham(euro);
+	}
+	
+	public static void euroToDirham(double euro)
+	{
+		double dir = euro*4.35;
+		System.out.println(dir);
+	}
+}

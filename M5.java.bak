@@ -1,0 +1,18 @@
+class M5 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+	
+	public static void evenOdd(int num)
+	{
+		System.out.println("evenOdd begin");
+		
+		if(num%2 == 0)
+		{
+			System.out.println("it is even");
+		}
+		System.out.println("evenOdd end");
+	}
+}
